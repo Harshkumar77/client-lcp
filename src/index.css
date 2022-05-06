@@ -1,0 +1,19 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  font-family: "Montserrat", sans-serif;
+}
+
+.animate-hover-grow:hover {
+  animation-name: hover-grow;
+  animation-duration: 0.125s;
+  animation-timing-function: linear;
+  animation-fill-mode: forwards;
+}
+@keyframes hover-grow {
+  to {
+    transform: scale(1.05);
+  }
+}
